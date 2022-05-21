@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  text-align: center;
+  font-family: "Arial", sans-serif;
+  font-size: 30px;
+}
+.slider {
+  height: 600px;
+  overflow: hidden;
+}
+.slider-width {
+  height: 100%;
+  display: flex;
+  transition: all ease .5s;
+}
+.slider-item {
+  width: 100vw;
+  height: inherit;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slider-controls {
+  position: absolute;
+  z-index: 99;
+  width: 100%;
+  top: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.slider-control {
+  text-align: center;
+  margin-inline: 30px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+}
